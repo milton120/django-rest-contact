@@ -4,7 +4,6 @@ from django.conf import settings
 
 
 class Contact(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     contact_number = models.CharField(max_length=50)
     created = models.DateTimeField(auto_now_add=True)
